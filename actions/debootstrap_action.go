@@ -55,6 +55,7 @@ import (
 	"os"
 	"path"
 	"strings"
+	"log"
 
 	"github.com/bg-mt/debos"
 	"github.com/go-debos/fakemachine"
