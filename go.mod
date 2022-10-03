@@ -1,4 +1,4 @@
-module github.com/go-debos/debos
+module github.com/bg-mt/debos
 
 go 1.15
 
