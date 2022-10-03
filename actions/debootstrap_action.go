@@ -56,7 +56,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/go-debos/debos"
+	"github.com/bg-mt/debos"
 	"github.com/go-debos/fakemachine"
 )
 

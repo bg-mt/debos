@@ -78,7 +78,7 @@ run: allows to run a command or script in the filesystem or in the host
 unpack: unpack files from archive in the filesystem
 .PP
 A full syntax description of all the debos actions can be found at:
-https://godoc.org/github.com/go-debos/debos/actions
+https://godoc.org/github.com/bg-mt/debos/actions
 .SH INSTALLATION (DOCKER CONTAINER)
 .PP
 Official debos container is available:
@@ -90,7 +90,7 @@ docker pull godebos/debos
 .fi
 .PP
 See
-docker/README.md (https://github.com/go-debos/debos/blob/master/docker/README.md)
+docker/README.md (https://github.com/bg-mt/debos/blob/master/docker/README.md)
 for usage.
 .SH INSTALLATION (UNDER DEBIAN)
 .IP
@@ -99,7 +99,7 @@ for usage.
 sudo apt install golang git libglib2.0-dev libostree-dev qemu-system-x86 \[rs]
      qemu-user-static debootstrap systemd-container
 export GOPATH=/opt/src/gocode # or whatever suites your needs
-go get -u github.com/go-debos/debos/cmd/debos
+go get -u github.com/bg-mt/debos/cmd/debos
 /opt/src/gocode/bin/debos --help
 \f[R]
 .fi
@@ -157,7 +157,7 @@ debos -t image:\[dq]debian-arm64.tgz\[dq] example.yaml
 .SH OTHER EXAMPLES
 .PP
 This example builds a customized image for a Raspberry Pi 3.
-https://github.com/go-debos/debos-recipes
+https://github.com/bg-mt/debos-recipes
 .SH ENVIRONMENT VARIABLES
 .PP
 debos read a predefined list of environment variables from the host and

@@ -174,7 +174,7 @@ import (
 	"time"
 	"regexp"
 
-	"github.com/go-debos/debos"
+	"github.com/bg-mt/debos"
 )
 
 type Partition struct {

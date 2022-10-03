@@ -28,7 +28,7 @@ import (
 	"fmt"
 	"path"
 
-	"github.com/go-debos/debos"
+	"github.com/bg-mt/debos"
 )
 
 type OverlayAction struct {

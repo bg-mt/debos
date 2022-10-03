@@ -51,7 +51,7 @@ Some of the actions provided by debos to customize and produce images are:
 * unpack: unpack files from archive in the filesystem
 
 A full syntax description of all the debos actions can be found at:
-https://godoc.org/github.com/go-debos/debos/actions
+https://godoc.org/github.com/bg-mt/debos/actions
 
 ## Installation (Docker container)
 
@@ -60,14 +60,14 @@ Official debos container is available:
 docker pull godebos/debos
 ```
 
-See [docker/README.md](https://github.com/go-debos/debos/blob/master/docker/README.md) for usage.
+See [docker/README.md](https://github.com/bg-mt/debos/blob/master/docker/README.md) for usage.
 
 ## Installation (under Debian)
 
     sudo apt install golang git libglib2.0-dev libostree-dev qemu-system-x86 \
          qemu-user-static debootstrap systemd-container
     export GOPATH=/opt/src/gocode # or whatever suits your needs
-    go install -v github.com/go-debos/debos/cmd/debos@latest
+    go install -v github.com/bg-mt/debos/cmd/debos@latest
     /opt/src/gocode/bin/debos --help
 
 ## Simple example
@@ -113,7 +113,7 @@ this:
 
 Example recipes are collected in a separate repository:
 
-https://github.com/go-debos/debos-recipes
+https://github.com/bg-mt/debos-recipes
 
 ## Environment variables
 
@@ -169,7 +169,7 @@ host without creating a fakemachine.
 Performance of the backends is roughly as follows: `kvm` is faster than `uml` is faster than `qemu`.
 Using `--disable-fakemachine` is slightly faster than `kvm`, but requires root permissions.
 
-Numbers for running [pine-a64-plus/debian.yaml](https://github.com/go-debos/debos-recipes/blob/9a25b4be6c9136f4a27e542f39ab7e419fc852c9/pine-a64-plus/debian.yaml) on an Intel Pentium G4560T with SSD:
+Numbers for running [pine-a64-plus/debian.yaml](https://github.com/bg-mt/debos-recipes/blob/9a25b4be6c9136f4a27e542f39ab7e419fc852c9/pine-a64-plus/debian.yaml) on an Intel Pentium G4560T with SSD:
 
 | Backend | Wall Time | Prerequisites |
 | --- | --- | --- |
