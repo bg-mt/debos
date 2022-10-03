@@ -257,6 +257,9 @@ func (d *DebootstrapAction) Run(context *debos.DebosContext) error {
 
 	c := debos.NewChrootCommandForContext(*context)
 	c.ChrootMethod = debos.CHROOT_METHOD_CHROOT
+	log.Printf("CALLING APT CLEAN....\n")
+	log.Printf("CALLING APT CLEAN....\n")
+	log.Printf("CALLING APT CLEAN....\n")
 
 	return c.Run("apt clean", "/usr/bin/apt-get", "clean")
 }
